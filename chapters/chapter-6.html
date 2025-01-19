@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - Instruction Level Parallelism</title>
+    <link rel="stylesheet" href="../css/chapter.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Instruction Level Parallelism</h1>
+        <h2>The Fellowship of Instructions: A Legendary Quest in the CPU Kingdom</h2>
+        <section class ="intro">
+            <p>In a land where logic gates hum and binary flows like rivers, there exists a fellowship. A brave group of adventurers, united by a common purpose, works tirelessly to bring order to chaos, speed to computation, and harmony to the CPU Kingdom. Their tale is one of courage, collaboration, and clock cycles. This is the story of the Fellowship of Instructions.</p>
+        </section>
+
+        <section class="fellowship">
+            <h2 class="section-title">The Fellowship Forms</h2>
+            <p>The fellowship begins with a brave set of instructions, each with a unique purpose: load data, perform arithmetic, store results, or branch off into mysterious lands.</p>
+
+            <ul class="fellowship-list">
+                <li><strong>Fetch the Explorer:</strong> The first adventurer, Fetch, ventures into the memory forest to discover the next great instruction. He brings back the scroll of purpose.</li>
+                <li><strong>Decode the Scholar:</strong> Fetch hands the scroll to Decode, a wise sage who translates its meaning into a language understood by the others. "Aha!" Decode exclaims. "This is an add instruction. Our journey is clear!"</li>
+                <li><strong>Execute the Warrior:</strong> Armed with the decoded scroll, Execute steps up, wielding the sword of ALU (Arithmetic Logic Unity). He performs the task, be it slaying dragons of subtraction or building castles of addition.</li>
+                <li><strong>Memory the Archivist:</strong> Next, Memory carefully handles the treasures unearthed by Execute. She either retrieves precious data from the memory vault or stores newly forged results for future quests.</li>
+                <li><strong>Write-Back the Bard:</strong> Finally, Write-Back pens the tale of this heroic journey into the registers, ensuring that the CPU Kingdom remembers the deeds of this noble instruction.</li>
+            </ul>
+        </section>
+
+        <section class="compass">
+            <h2 class="section-title">The Compass of the Fellowship</h2>
+            <p>At the start of their journey, Fetch the Explorer doesn't wander aimlessly through the vast Memory Forest. No, he carries the PC Compass, a magical artifact that always points him toward the next instruction hidden in the forest. Without it, Fetch would be lost, doomed to roam the memory aimlessly like a bug in the system.</p>
+
+            <p>The PC Compass doesn’t just guide—it evolves! After Fetch retrieves an instruction, the PC Compass updates itself, pointing toward the next landmark. But if the Fellowship encounters a branch instruction, the compass recalibrates, charting a new path into unexplored regions of the forest.</p>
+
+            <p>With the PC Compass in hand, Fetch’s job becomes clear, and the Fellowship's journey can begin. Without it, the adventure would be chaos, and the CPU Kingdom would fall into disarray! Truly, the PC Compass is the unsung hero of this epic quest.</p>
+        </section>
+
+        <section class="pipeline">
+            <h2 class="section-title">A Pipelined Adventure</h2>
+            <p>The Fellowship travels through the pipeline stages like a well-oiled machine. Each member is busy with their part of the quest, and as soon as one instruction reaches the next stage, a new instruction begins its journey. It’s a seamless and harmonious process—like a conveyor belt of destiny!</p>
+
+            <p>But beware! There are dangers in this journey:</p>
+            <ul class="dangers-list">
+                <li><strong>Data Hazards:</strong> Sometimes, the Fellowship discovers that one instruction needs information still being worked on by another. They must pause, waiting for their turn.</li>
+                <li><strong>Control Hazards:</strong> When a branching instruction appears, it’s like a fork in the road—no one knows which path to take! The Fellowship may have to backtrack or wait for the path to clear.</li>
+                <li><strong>Structural Hazards:</strong> Occasionally, multiple instructions fight over the same resources.</li>
+            </ul>
+        </section>
+
+        <section class="victory">
+            <h2 class="section-title">Victory of the Pipeline</h2>
+            <p>When all hazards are overcome, the instructions complete their quest, and the CPU Kingdom thrives. The pipeline ensures that multiple instructions work together in harmony, like a fellowship bonded by purpose, achieving more together than they ever could alone.</p>
+
+            <p>And thus, the Fellowship of the Instructions marches on, ensuring the kingdom runs smoothly, one clock cycle at a time!</p>
+        </section>
+    </div>
+</body>
+</html>

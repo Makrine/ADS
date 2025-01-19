@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chapter-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-title {
+    font-size: 1.2em;
+    color: #007BFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.chapter-title:hover {
+    text-decoration: underline;
+}
+
+.chapter-subtitle {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+}
+
+.intro p {
+    font-style: italic;
+}
